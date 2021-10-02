@@ -1,0 +1,1 @@
+This project is made to put in practice my knowledge with OOP in JavaScript
