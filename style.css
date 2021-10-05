@@ -1,0 +1,21 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background: #E4D9FF;
+    font-family: 'Gemunu Libre', sans-serif;
+}
+#header{
+    color: #FAFAFF;
+    display: flex;
+    font-size: 90px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    background: #1E2749;
+}
+#controller-logo{
+    width: 200px;
+    height: auto;
+    margin-left: 50px;
+}

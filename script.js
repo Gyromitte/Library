@@ -19,9 +19,9 @@ function addBookToLibrary(){
     title = new Book(title, author, pages, read);
     myLibrary.push(title);
 }
-addBookToLibrary();
+/*addBookToLibrary();
 console.log(title.info());
 console.log(myLibrary[0]);
 addBookToLibrary();
 console.log(myLibrary[1]);
-
+*/
