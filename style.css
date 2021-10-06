@@ -27,9 +27,7 @@ body{
 .game-card{
     color: #FAFAFF;
     border-radius: 10px;
-    padding: 10px;
-    flex-direction: column;
-    background: linear-gradient(to bottom right, #273469, #344bba);
     padding: 30px;
+    background: linear-gradient(to bottom right, #273469, #344bba);
 
 }
