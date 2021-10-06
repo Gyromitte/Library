@@ -18,8 +18,23 @@ function Game(title, author, hours, played){
 }
 const game1 = new Game("Hollow knight", "Team cherry", "32 hours", "Played");
 const game2 = new Game("Bornout paradise", "Electronic Arts", "40 hours", "Played");
+const game3 = new Game("Hollow knight", "Team cherry", "32 hours", "Played");
+const game4 = new Game("Bornout paradise", "Electronic Arts", "40 hours", "Played");
+const game5 = new Game("Hollow knight", "Team cherry", "32 hours", "Played");
+const game6 = new Game("Bornout paradise", "Electronic Arts", "40 hours", "Played");
+const game7 = new Game("Hollow knight", "Team cherry", "32 hours", "Played");
+const game8 = new Game("Bornout paradise", "Electronic Arts", "40 hours", "Played");
+const game9 = new Game("Hollow knight", "Team cherry", "32 hours", "Played");
+const game10 = new Game("Bornout paradise", "Electronic Arts", "40 hours", "Played");
+const game11= new Game("Hollow knight", "Team cherry", "32 hours", "Played");
+const game12 = new Game("Bornout paradise", "Electronic Arts", "40 hours", "Played");
+const game13 = new Game("Hollow knight", "Team cherry", "32 hours", "Played");
+const game14 = new Game("Bornout paradise", "Electronic Arts", "40 hours", "Played");
+
+
 myLibrary.push(game1);
-myLibrary.push(game2);
+myLibrary.push(game2, game3, game4, game5, game6, game7, game8, game9,
+    game10, game11, game12, game13, game14);
 console.log(myLibrary);
 
 function addBookToLibrary(){
