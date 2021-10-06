@@ -5,7 +5,6 @@ const library = document.getElementById('library');
 const gameCard = document.createElement('div');
 gameCard.classList.add('game-card');
 
-library.appendChild(gameCard);
 
 function Game(title, author, hours, played){
     this.title = title;
@@ -17,6 +16,11 @@ function Game(title, author, hours, played){
         return info;
     }
 }
+const game1 = new Game("Hollow knight", "Team cherry", "32 hours", "Played");
+const game2 = new Game("Bornout paradise", "Electronic Arts", "40 hours", "Played");
+myLibrary.push(game1);
+myLibrary.push(game2);
+console.log(myLibrary);
 
 function addBookToLibrary(){
     title = prompt("Write the title of the book: ");
@@ -27,15 +31,20 @@ function addBookToLibrary(){
     myLibrary.push(title);
 }
 
-const game1 = new Game("Hollow knight", "Team cherry", "32 hours", "Played");
-const game2 = new Game("Bornout paradise", "Electronic Arts", "40 hours", "Played");
+function displayGames(){
+    for(i=0; i < myLibrary.length; i++){
+        const gameCard = document.createElement('div');
+        gameCard.classList.add('game-card');
+        gameCard.innerText = myLibrary[i].info();
+        library.appendChild(gameCard);
+    }
+}
+displayGames();
 
-gameCard.innerText = game1.info();
 
 
-myLibrary.push(game1);
-myLibrary.push(game2);
-console.log(myLibrary);
+
+
 
 
 /*addBookToLibrary();
