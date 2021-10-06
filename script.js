@@ -30,11 +30,7 @@ function addBookToLibrary(){
 const game1 = new Game("Hollow knight", "Team cherry", "32 hours", "Played");
 const game2 = new Game("Bornout paradise", "Electronic Arts", "40 hours", "Played");
 
-for(i=0; i<5; i++){
-    const paragraph = document.createElement('p');
-    gameCard.innerText = game1.info();
-    gameCard.appendChild(paragraph);
-}
+gameCard.innerText = game1.info();
 
 
 myLibrary.push(game1);

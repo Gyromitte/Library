@@ -24,10 +24,14 @@ body{
     margin: 50px;
     justify-content: space-around;
 }
+br{
+    margin: 10px;
+}
 .game-card{
+    display: flex;
+    flex-direction: column;
     color: #FAFAFF;
     border-radius: 10px;
     padding: 30px;
     background: linear-gradient(to bottom right, #273469, #344bba);
-
 }
