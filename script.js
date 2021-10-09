@@ -1,5 +1,6 @@
 let myLibrary = [];
 
+
 const library = document.getElementById('library');
 
 const gameCard = document.createElement('div');

@@ -23,9 +23,27 @@ body{
     display: flex;
     margin: 50px;
     flex-wrap: wrap;
+    justify-content: center;
 }
 br{
     margin: 5px;
+}
+#add-button-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#add-game-button{
+    margin-top: 50px;
+    font-size: 30px;
+    color: #FAFAFF;
+    background-color: #30343F;
+    padding: 30px;
+    border: none;
+    border-radius: 50px;
+}
+#add-game-button:hover{
+    background-color: #21242c;
 }
 .game-card{
     margin: 10px;
