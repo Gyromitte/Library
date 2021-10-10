@@ -56,3 +56,59 @@ br{
     height: 100px;
     background: linear-gradient(to bottom right, #273469, #344bba);
 }
+#add-game-modal{
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+.modal-content{
+    display: flex;
+    flex-direction: column;
+    margin: 15% auto;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    width: 300px;
+    border-radius: 10px;
+    color: white;
+    background: linear-gradient(to bottom right, #273469, #344bba);
+}
+label{
+    margin: 10px;
+}
+input{
+    margin: 10px;
+    border-radius: 10px;
+    border-color: #1E2749;
+}
+#close-button{
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    margin-right: auto;
+    background-color: rgb(194, 65, 42);
+    border: none;
+    color: white;
+}
+#close-button:hover{
+    background-color: rgb(129, 20, 20);
+}
+#submit-button{
+    color: white;
+    margin-left: 50px;
+    margin-top: 10px;
+    background-color: #30343F;
+    border: none;
+    border-radius: 50px;
+    padding: 20px;
+    font-size: 30px;
+}
+#submit-button:hover{
+    background-color: #21242c;
+}

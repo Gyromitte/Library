@@ -1,11 +1,10 @@
 let myLibrary = [];
 
-
 const library = document.getElementById('library');
-
 const gameCard = document.createElement('div');
 gameCard.classList.add('game-card');
 
+const AddGame = document.getElementById('add-game-button');
 
 function Game(title, author, hours, played){
     this.title = title;
@@ -57,6 +56,9 @@ function displayGames(){
 }
 displayGames();
 
+AddGame.addEventListener('click', e=>{
+    console.log("hi");
+});
 
 
 
