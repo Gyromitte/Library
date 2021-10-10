@@ -57,6 +57,7 @@ br{
     background: linear-gradient(to bottom right, #273469, #344bba);
 }
 #add-game-modal{
+    display: none; 
     position: fixed;
     z-index: 1;
     left: 0;

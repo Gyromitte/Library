@@ -4,7 +4,9 @@ const library = document.getElementById('library');
 const gameCard = document.createElement('div');
 gameCard.classList.add('game-card');
 
-const AddGame = document.getElementById('add-game-button');
+const addGame = document.getElementById('add-game-button');
+const modal = document.getElementById('add-game-modal');
+const closeButton = document.getElementById('close-button');
 
 function Game(title, author, hours, played){
     this.title = title;
@@ -56,9 +58,17 @@ function displayGames(){
 }
 displayGames();
 
-AddGame.addEventListener('click', e=>{
-    console.log("hi");
+addGame.addEventListener('click', e=>{
+    modal.style.display = "block";
 });
+closeButton.addEventListener('click', e=>{
+    modal.style.display = "none";
+});
+window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+}
 
 
 
