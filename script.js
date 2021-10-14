@@ -1,4 +1,7 @@
 let myLibrary = [];
+//Counter will keep count of how many remove buttons exists and gives them
+//a unic ID
+var counter = 0;
 
 const library = document.getElementById('library');
 const gameCard = document.createElement('div');
@@ -9,6 +12,7 @@ const modal = document.getElementById('add-game-modal');
 const closeButton = document.getElementById('close-button');
 
 const submittButton = document.getElementById('submit-button');
+const removeButtons = document.querySelectorAll
 
 function Game(title, author, completed, played){
     this.title = title;
@@ -41,10 +45,22 @@ function addBookToLibrary(){
 }
 
 function displayGames(){
+        counter++;
         const gameCard = document.createElement('div');
         gameCard.classList.add('game-card');
         gameCard.innerText = myLibrary[myLibrary.length-1].info();
+
+        const removeCard = document.createElement('button');
+        removeCard.id = "button"+counter;
+        removeCard.innerHTML = "Remove Card";
+        removeCard.addEventListener('click', () => {
+            console.log(myLibrary);
+            gameCard.remove();
+        });
+        gameCard.appendChild(removeCard);
         library.appendChild(gameCard);
+
+
 }
 
 addGame.addEventListener('click', e=>{
@@ -60,6 +76,7 @@ submittButton.addEventListener('click', e=>{
     modal.style.display = "none";
     document.forms[0].reset();
     console.log(myLibrary);
+
 });
 window.onclick = function(event) {
     if (event.target == modal) {
