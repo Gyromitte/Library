@@ -45,26 +45,25 @@ function addBookToLibrary(){
 }
 
 function displayGames(){
-        counter++;
         const gameCard = document.createElement('div');
         gameCard.classList.add('game-card');
         gameCard.innerText = myLibrary[myLibrary.length-1].info();
 
         const removeCard = document.createElement('button');
-        removeCard.id = "button"+counter;
+        removeCard.id = counter;
+        counter++;
         removeCard.innerHTML = "Remove Card";
         removeCard.addEventListener('click', () => {
-            console.log(myLibrary);
+            myLibrary.splice(removeCard.id, 1);
             gameCard.remove();
         });
         gameCard.appendChild(removeCard);
         library.appendChild(gameCard);
-
-
 }
 
 addGame.addEventListener('click', e=>{
     modal.style.display = "block";
+    console.log(myLibrary);
 });
 closeButton.addEventListener('click', e=>{
     modal.style.display = "none";
