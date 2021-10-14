@@ -51,6 +51,7 @@ function displayGames(){
 
         const removeCard = document.createElement('button');
         removeCard.id = counter;
+        removeCard.classList = "remove-button";
         counter++;
         removeCard.innerHTML = "Remove Card";
         removeCard.addEventListener('click', () => {

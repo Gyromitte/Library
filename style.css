@@ -53,7 +53,7 @@ br{
     border-radius: 10px;
     padding: 20px;
     width: 150px;
-    height: 100px;
+    height: 130px;
     background: linear-gradient(to bottom right, #273469, #344bba);
 }
 #add-game-modal{
@@ -112,4 +112,14 @@ input{
 }
 #submit-button:hover{
     background-color: #21242c;
+}
+.remove-button{
+    color: white;
+    border-color: #1E2749;
+    background-color: rgb(194, 65, 42);
+    border-radius: 10px;
+    margin-top: auto;
+}
+.remove-button:hover{
+    background-color: rgb(129, 20, 20);
 }
