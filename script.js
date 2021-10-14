@@ -12,7 +12,6 @@ const modal = document.getElementById('add-game-modal');
 const closeButton = document.getElementById('close-button');
 
 const submittButton = document.getElementById('submit-button');
-const removeButtons = document.querySelectorAll
 
 function Game(title, author, completed, played){
     this.title = title;
@@ -48,7 +47,6 @@ function displayGames(){
         const gameCard = document.createElement('div');
         gameCard.classList.add('game-card');
         gameCard.innerText = myLibrary[myLibrary.length-1].info();
-
         const removeCard = document.createElement('button');
         removeCard.id = counter;
         removeCard.classList = "remove-button";
